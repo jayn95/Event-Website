@@ -1,0 +1,46 @@
+
+.circle-chart {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    overflow: hidden;
+  }
+  
+  .circle-chart .circle-chart__percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .circle-chart .circle-chart__mask,
+  .circle-chart .circle-chart__fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .circle-chart .circle-chart__mask {
+    clip: rect(0, 100px, 200px, 0);
+  }
+  
+  .circle-chart .circle-chart__fill {
+    clip: rect(0, 200px, 200px, 100px);
+  }
+  
+  /* Customize the colors as per your preference */
+  .circle-chart .circle-chart__mask {
+    background-color: #d1d1d1;
+  }
+  
+  .circle-chart .circle-chart__fill {
+    background-color: #ff6347;
+  }
+  

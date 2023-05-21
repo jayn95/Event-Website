@@ -1,0 +1,182 @@
+body {
+    background: #fafafc;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #0d08b4;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar:hover .sidebar {
+    display: block;
+  }
+  
+  .profile-wrapper:hover .new-sidebar {
+    right: 0;
+  }
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 14px 20px;
+    transition: background-color 0.3s; 
+}
+
+.dropbtn:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    cursor: pointer;
+}
+
+.sidebar {
+    background-color: #0d08b4;
+    top: 70px;
+    width: 150px;
+    height: 1;
+    position: fixed; 
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: none;
+    overflow-y: auto; 
+}
+
+.sidebar a {
+    display: block; 
+    padding: 12px 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.dropdown:hover .sidebar {
+    display: block;
+}
+
+.title {
+    font-size: 20px;
+    color: white;
+    padding: 20px 16px;
+    order: 1; 
+}
+
+.profile-wrapper {
+    position: relative;
+    display: inline-flex; 
+    order: 3;
+
+}
+
+.profile-button {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    order: 2;
+    position: relative; /* Added to establish a new stacking context */
+}
+
+.profile-button img {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.new-sidebar {
+    position: fixed;
+    top: 70px;
+    right: -150px;
+    width: 150px;
+    background-color: #0d08b4;
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    z-index: 2; 
+}
+
+.profile-wrapper:hover .new-sidebar {
+    right: 0;
+}
+
+.logout-button {
+    display: block;
+    margin: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #0d08b4;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.logout-button:hover {
+    background-color: #0d08b4;
+}
+
+.container {
+    margin: 10px;
+    width: 30%;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    color: white;
+    background: white;
+  }
+
+table {
+    margin: 10px;
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    background: white;
+}
+
+table th {
+    padding: 8px;
+    text-align: center;
+}
+
+table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.ticket-container {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    background: white;
+}
+
+.ticket-count {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* CSS styling for the chart container */
+#chart-container {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+  
